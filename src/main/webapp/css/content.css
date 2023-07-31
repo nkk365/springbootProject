@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.content-container {
+  width: 80%;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.author-info,
+.created-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.label {
+  margin-right: 5px;
+}
+
+.value {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.time {
+  font-style: italic;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.image-path {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.list-button {
+  text-decoration: none;
+}
+
+.list-button,
+.edit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  margin-left: 20px;
+}
+
+.spacer {
+  flex: 1;
+}

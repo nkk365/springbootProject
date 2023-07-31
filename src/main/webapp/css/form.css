@@ -1,0 +1,210 @@
+@charset "UTF-8";
+.button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+form {
+  width: 80%;
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group .file-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-group .file-buttons {
+  display: flex;
+  margin-top: 5px;
+}
+
+.form-group .file-buttons button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group .file-buttons .remove-file {
+  background-color: #f44336;
+}
+
+.form-group .file-buttons button:hover {
+  background-color: #45a049;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+
+.file-container {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.file-name {
+  margin-left: 10px;
+}
+
+.file-group {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.file-group label {
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-buttons {
+  text-align: right;
+  margin: 10px;
+}
+
+.file-name {
+  margin-right: 10px;
+}
+
+.file-info {
+  margin-right: 20px;
+}
+
+.button {
+  color: #ffffff;
+}
+
+
+.delete-file {
+  background-color: #f44336;
+}
+
+.delete-file:hover {
+  background-color: #d32f2f;
+}
+
+.add-file {
+  background-color: #4caf50;
+  margin-left: 10px;
+}
+
+.add-file:hover {
+  background-color: #45a049;
+}
+
+
+.remove-file {
+  background-color: #f44336;
+}
+
+.remove-file:hover {
+  background-color: #d32f2f;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.list-button,
+.edit-button,
+.register-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-button{
+  text-decoration:none;
+}
+.register-button,
+.list-button {
+  margin-left: 10px;
+}
+
+.spacer {
+  flex: 1;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<mapper namespace="com.project.spring.mapper.BoardMapper">
+    <select id="getAllBoard" resultType="com.project.spring.dao.Board">
+        SELECT
+        id, title, image, content, author
+        FROM
+        News
+        ORDER BY id asc
+    </select>
+    
+    <insert id="addBoard">
+        INSERT INTO 
+        News
+        (
+        title,
+        image,
+        content,
+        author
+        )
+        VALUES
+        (
+        #{title},
+        #{image},
+        #{content},
+        #{author}
+        )
+    </insert>
+    
+    <select id="getOneBoard" resultType="com.project.spring.dao.Board">
+        SELECT
+        id, title, image, content, author
+        FROM
+        News
+        WHERE
+        id = #{id}
+    </select>
+    
+</mapper>
+<!-- <mapper namespace="com.project.spring.mapper.FormMapper">
+
+
+    <select id="selectFormById" resultType="com.project.spring.dto.FormDto">
+        SELECT * FROM your_table_name WHERE id = #{id}
+    </select>
+
+
+    <insert id="insertForm">
+        INSERT INTO your_table_name (title, content, files, author, createdTime, updateTime)
+        VALUES (#{title}, #{content}, #{files}, #{author}, #{createdTime}, #{updateTime})
+    </insert>
+
+
+    <update id="updateForm">
+        UPDATE your_table_name
+        SET title = #{title}, content = #{content}, files = #{files},
+            author = #{author}, createdTime = #{createdTime}, updateTime = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+
+</mapper> -->
